@@ -2,6 +2,7 @@ import React from "react";
 import image1 from "../assets/1 1 (1).png"
 
 
+
 const Orders = () => {
   return (
     <div className="container mx-auto p-4 w-[80%]   sm:w-3/5 my-20">

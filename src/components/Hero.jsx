@@ -1,9 +1,12 @@
 import React from "react";
 import heroImg from "../assets/frame.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { BsCart4 } from "react-icons/bs";
 
 const Hero = () => {
+    const location = useLocation();
+      const getActiveClass = (path) =>
+        location.pathname === path ? "text-orange-400" : "text-gray-400";
   return (
     <div>
       <section
@@ -14,13 +17,19 @@ const Hero = () => {
         <div>.</div>
         <div className="flex flex-row justify-between gap-5">
           <h5>
-            <Link to="/">Home</Link>
+            <Link to="/" className={getActiveClass("/")}>
+              Home
+            </Link>
           </h5>
           <h5>
-            <Link to="/products">Products</Link>
+            <Link to="/products" className={getActiveClass("/products")}>
+              Products
+            </Link>
           </h5>
           <h5>
-            <Link to="/orders">Orders</Link>
+            <Link to="/orders" className={getActiveClass("/orders")}>
+              Orders
+            </Link>
           </h5>
         </div>
         <div>

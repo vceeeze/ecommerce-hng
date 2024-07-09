@@ -9,6 +9,7 @@ import image7 from "../assets/1 1 (6).png";
 import image8 from "../assets/1 1 (8).png";
 import image9 from "../assets/1 1 (9).png";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Products = () => {
  const images = [
@@ -56,12 +57,15 @@ const Products = () => {
             </div>
             <div className="flex flex-row justify-between items-center ">
               <p className="text-sm text-green-300 mb-2">inStock: 14</p>
-              <p className="h-3 w-3 rounded-lg bg-gray-600 text-white items-center justify-center text-sm"> </p>
+              <p className="h-3 w-3 rounded-lg bg-gray-600 text-white items-center justify-center text-sm">
+                {" "}
+              </p>
             </div>
-
-            <button className="absolute bottom-0 left-0 right-0 w-full h-10 bg-[#A3D9A5] text-white text-center">
-              Add to Cart
-            </button>
+            <Link to="/orders">
+              <button className="absolute bottom-0 left-0 right-0 w-full h-10 bg-[#A3D9A5] text-white text-center">
+                Add to Cart
+              </button>
+            </Link>
           </div>
         ))}
       </div>

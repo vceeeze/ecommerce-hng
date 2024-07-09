@@ -1,6 +1,7 @@
 import React from "react";
 import Img1 from "../assets/1 1.png";
 import Img2 from "../assets/1 1 (1).png";
+import { Link } from "react-router-dom";
 
 const Card = () => {
   return (
@@ -117,7 +118,9 @@ const Card = () => {
       </div>
 
       <div className="flex items-center justify-center bg-[#D4A373] mx-auto w-full md:w-[30%] text-white mt-5">
-        <button className="py-2 px-4">View Our Products</button>
+        <Link to="/products">
+          <button className="py-2 px-4">View Our Products</button>
+        </Link>
       </div>
     </div>
   );

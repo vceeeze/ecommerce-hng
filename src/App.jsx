@@ -7,6 +7,7 @@ import Layout from "./components/Layout";
 import Products from "./components/Products";
 import Orders from "./components/Orders";
 import Cart from "./components/Cart";
+import CheckOut from "./components/CheckOut";
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
             <Route path="orders" element={<Orders />} />
             <Route path="carts" element={<Cart />} />
           </Route>
+          <Route path="checkOut" element={<CheckOut />} />
         </Routes>
       </Router>
     </>

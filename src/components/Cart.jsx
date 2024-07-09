@@ -2,6 +2,7 @@ import React from "react";
 import image1 from "../assets/1 1 (1).png";
 import image2 from "../assets/1 1 (4).png";
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   return (
@@ -107,8 +108,10 @@ const Cart = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-center bg-[#D4A373] mx-auto w-full md:w-[30%] text-white mt-10 rounded-md">
-        <button className="py-2 px-4">Check out</button>
+    <div className="flex items-center justify-center bg-[#D4A373] mx-auto w-full md:w-[30%] text-white mt-10 rounded-md">
+        <Link to="/checkOut">
+          <button className="py-2 px-4">Check out</button>
+        </Link>
       </div>
     </div>
   );
